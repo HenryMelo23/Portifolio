@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry Melo | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Grid Background -->
+    <div class="grid-background"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav-glass">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="terminal-cursor">&gt;</span>
+                <span class="logo-text">PORTFOLIO_<span class="neon-green">v2.0</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#github">GitHub</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <canvas id="networkCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle terminal-text">[SYSTEM_ONLINE]</p>
+                <h1 class="hero-title">Mastering Digital Flow & <span class="neon-green">Resilience</span></h1>
+                <p class="hero-description">
+                    Computer Science undergrad engineering software solutions and 
+                    exploring the intricate architecture of digital networks.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="#contact" class="btn-secondary">Initialize Contact</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item"> 
+                    <span class="stat-label-1">Computer Science</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="23"></span>
+                    <span class="stat-label">% Years</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="6" >0</span>
+                    <span class="stat-label">Semester</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="terminal-cursor">&gt;</span> Core Expertise
+            </h2>
+            <div class="bento-grid">
+                <div class="bento-item large glass-card">
+                    <div class="bento-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                            <line x1="12" y1="2" x2="12" y2="4"/>
+                            <line x1="12" y1="20" x2="12" y2="22"/>
+                            <line x1="4.93" y1="4.93" x2="6.34" y2="6.34"/>
+                            <line x1="17.66" y1="17.66" x2="19.07" y2="19.07"/>
+                            <line x1="2" y1="12" x2="4" y2="12"/>
+                            <line x1="20" y1="12" x2="22" y2="12"/>
+                            <line x1="4.93" y1="19.07" x2="6.34" y2="17.66"/>
+                            <line x1="17.66" y1="6.34" x2="19.07" y2="4.93"/>
+                        </svg>
+                    </div>
+                    <h3>Network Architecture</h3>
+                    <p>Especialista em infraestruturas resilientes. Domínio do Modelo OSI, protocolos de roteamento dinâmico, configuração de NAT/CGNAT e otimização de QoS para redes de alta performance.</p>
+                    <div class="tech-tags">
+                        <span class="tag">TCP/IP</span>
+                        <span class="tag">Cisco/Packet Tracer</span>
+                        <span class="tag">NAT/CGNAT</span>
+                        <span class="tag">Dijkstra Algo</span>
+                    </div>
+                </div>
+
+                <div class="bento-item large glass-card">
+                    <div class="bento-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>Prática em ferramentas de teste de intrusão com Kali Linux e participação ativa em desafios CTF (TryHackMe). Focado em criptografia de dados e endurecimento de sistemas.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Kali Linux</span>
+                        <span class="tag">CTF (TryHackMe)</span>
+                        <span class="tag">Fernet Encryption</span>
+                    </div>
+                </div>
+
+                <div class="bento-item large glass-card">
+                    <div class="bento-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="6" width="20" height="12" rx="2"/>
+                            <path d="M12 12h.01"/>
+                            <path d="M17 12h.01"/>
+                            <path d="M7 12h.01"/>
+                        </svg>
+                    </div>
+                    <h3>Game Development</h3>
+                    <p>Desenvolvimento de mecânicas de jogos 2D e cooperativos. Experiência na criação de sistemas de sprites, lógica de colisão e multiplayer utilizando Python (Pygame) e C++.</p>
+                    <div class="tech-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Python/Pygame</span>
+                        <span class="tag">Sprite Design</span>
+                    </div>
+                </div>
+
+                <div class="bento-item small glass-card metric-card">
+                    <div id="repo-count-metric" class="metric-value neon-green">87+</div>
+                    <div class="metric-label">Repositórios</div>
+                </div>
+
+                <div class="bento-item small glass-card metric-card">
+                    <div id="follower-count-metric" class="metric-value electric-blue">2.8k</div>
+                    <div class="metric-label">GitHub Followers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="terminal-cursor">&gt;</span> Featured Projects
+            </h2>
+            <div class="project-grid">
+                
+                <div class="project-card glass-card" data-lang="cpp">
+                    <div class="project-header">
+                        <div class="project-lang-badge cpp">C++ / GameDev</div>
+                        <div class="project-status">
+                            <span class="status-dot"></span> Production
+                        </div>
+                    </div>
+                    <h3 class="project-title">Ruptura Temporal</h3>
+                    <p class="project-description">
+                        Um jogo cooperativo focado em manipulação temporal e mecânicas complexas de física, desenvolvido com foco em performance e arquitetura multi-threaded.
+                    </p>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <span>GitHub Master</span>
+                        </div>
+                        <div class="stat">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="1"/>
+                                <circle cx="12" cy="5" r="1"/>
+                                <circle cx="12" cy="19" r="1"/>
+                            </svg>
+                            <span>C++ / SFML</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Game Engine</span>
+                        <span>OO Design</span>
+                        <span>Physics Engine</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card" data-lang="java">
+                    <div class="project-header">
+                        <div class="project-lang-badge java">Java</div>
+                        <div class="project-status">
+                            <span class="status-dot"></span> Active
+                        </div>
+                    </div>
+                    <h3 class="project-title">GestãoRH</h3>
+                    <p class="project-description">
+                        Sistema robusto de gestão de recursos humanos e recrutamento, utilizando Java Swing e padrões de projeto (UML) para otimizar o fluxo de entrevistas.
+                    </p>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <span>Enterprise</span>
+                        </div>
+                        <div class="stat">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="1"/>
+                                <circle cx="12" cy="5" r="1"/>
+                                <circle cx="12" cy="19" r="1"/>
+                            </svg>
+                            <span>Java 17</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Swing</span>
+                        <span>JDBC</span>
+                        <span>UML Design</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card" data-lang="js">
+                    <div class="project-header">
+                        <div class="project-lang-badge python">Web / Research</div>
+                        <div class="project-status">
+                            <span class="status-dot"></span> Alpha
+                        </div>
+                    </div>
+                    <h3 class="project-title">Tinpes</h3>
+                    <p class="project-description">
+                        Plataforma inovadora estilo "Tinder para pesquisas", facilitando o networking entre pesquisadores e a colaboração científica global.
+                    </p>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <span>Web Interface</span>
+                        </div>
+                        <div class="stat">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="1"/>
+                                <circle cx="12" cy="5" r="1"/>
+                                <circle cx="12" cy="19" r="1"/>
+                            </svg>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>HTML/CSS</span>
+                        <span>Dynamic UI</span>
+                        <span>Networking</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Feed Section -->
+    <section id="github" class="github">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="terminal-cursor">&gt;</span> GitHub Activity Dashboard
+            </h2>
+            <div class="github-dashboard glass-card">
+                <div class="dashboard-header">
+                    <div class="dashboard-tabs">
+                        <button class="tab active">Overview</button>
+                        <button class="tab">Contributions</button>
+                        <button class="tab">Repositories</button>
+                    </div>
+                    <div class="dashboard-time">Last updated: <span id="lastUpdate">--</span></div>
+                </div>
+                
+                <div class="dashboard-content">
+                    <div class="github-stats-grid">
+                        <div class="github-stat-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </div>
+                            <div class="stat-data">
+                                <div class="stat-number electric-blue"></div>
+                                <div class="stat-label">Repositories</div>
+                            </div>
+                        </div>
+
+                        <div class="github-stat-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                                </svg>
+                            </div>
+                            <div class="stat-data">
+                                <div class="stat-number neon-green"></div>
+                                <div class="stat-label">Contributions</div>
+                            </div>
+                        </div>
+
+                        <div class="github-stat-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                            </div>
+                            <div class="stat-data">
+                                <div class="stat-number electric-blue"></div>
+                                <div class="stat-label">Total Stars</div>
+                            </div>
+                        </div>
+
+                        <div class="github-stat-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <div class="stat-data">
+                                <div class="stat-number neon-green"></div>
+                                <div class="stat-label">Followers</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contribution-graph">
+                        <h4>Contribution Activity</h4>
+                        <div class="graph-container">
+                            <canvas id="contributionCanvas"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="recent-activity">
+                        <h4>Recent Activity</h4>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-dot"></div>
+                                <div class="activity-content">
+                                    <p><strong>Pushed</strong> to <span class="repo-name">network-optimizer</span></p>
+                                    <span class="activity-time">2 hours ago</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-dot"></div>
+                                <div class="activity-content">
+                                    <p><strong>Created</strong> repository <span class="repo-name">secure-auth-api</span></p>
+                                    <span class="activity-time">1 day ago</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-dot"></div>
+                                <div class="activity-content">
+                                    <p><strong>Merged</strong> pull request in <span class="repo-name">distributed-cache</span></p>
+                                    <span class="activity-time">3 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="terminal-cursor">&gt;</span> Initialize Connection
+            </h2>
+            <div class="contact-container">
+                <div class="contact-info glass-card">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">connection_info.sh</span>
+                        </div>
+                        <div class="terminal-content">
+                            <p><span class="prompt">$</span> cat contact_methods.txt</p>
+                            <p class="terminal-output">━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+                            <p class="terminal-output">📧 Email: luishenrique.lh2304@gmail.com</p>
+                            <p class="terminal-output">🔗 LinkedIn: Luis Henrique Melo</p>
+                            <p class="terminal-output">💻 GitHub: @Henrymelo23</p>
+                            <p class="terminal-output">🌐 Location: Brasilia/DF</p>
+                            <p class="terminal-output">━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+                            <p><span class="prompt">$</span> status --availability</p>
+                            <p class="terminal-output neon-green">● AVAILABLE FOR PROJECTS</p>
+                            <p><span class="prompt">$</span> <span class="cursor-blink">_</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper glass-card">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-terminal">
+                            <div class="terminal-header">
+                                <span class="terminal-dot red"></span>
+                                <span class="terminal-dot yellow"></span>
+                                <span class="terminal-dot green"></span>
+                                <span class="terminal-title">message_composer.sh</span>
+                            </div>
+                            <div class="terminal-content">
+                                <div class="form-line">
+                                    <label><span class="prompt">$</span> enter_name:</label>
+                                    <input type="text" id="name" name="name" required placeholder="John_Doe" />
+                                </div>
+                                <div class="form-line">
+                                    <label><span class="prompt">$</span> enter_email:</label>
+                                    <input type="email" id="email" name="email" required placeholder="john@example.com" />
+                                </div>
+                                <div class="form-line">
+                                    <label><span class="prompt">$</span> select_subject:</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="">--select--</option>
+                                        <option value="collaboration">Collaboration</option>
+                                        <option value="project">Project Inquiry</option>
+                                        <option value="consulting">Consulting</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-line">
+                                    <label><span class="prompt">$</span> compose_message:</label>
+                                    <textarea id="message" name="message" required placeholder="Type your message here..." rows="5"></textarea>
+                                </div>
+                                <div class="form-line">
+                                    <button type="submit" class="btn-terminal">
+                                        <span class="prompt">$</span> send_message --priority=high
+                                    </button>
+                                </div>
+                                <div id="formStatus" class="form-status"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="terminal-text"><span class="neon-green">●</span> System Status: Online</p>
+                    <p>&copy; 2025 Portfolio Luis Henrique Bessa de Melo. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://github.com/HenryMelo23" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/luis-henrique-melo-84231a250/" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@HMeloI" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.11 1 12 1 12s0 3.89.46 5.58a2.78 2.78 0 0 0 1.94 2c1.72.42 8.6.42 8.6.42s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.89 23 12 23 12s0-3.89-.46-5.58z"></path>
+                                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
