@@ -475,7 +475,9 @@ document.addEventListener('DOMContentLoaded', function() {
         card.addEventListener('mouseleave', function() {
             this.style.transform = 'translateY(0)';
         });
+        
     });
+    
     
     // ========== CUSTOM CURSOR EFFECT (Optional Enhancement) ==========
     let cursorDot = document.createElement('div');
