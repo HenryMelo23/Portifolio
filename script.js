@@ -363,44 +363,47 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicializa a sincronização sistêmica
     syncGithubProfile();
 
-    // Chame esta função dentro do seu DOMContentLoaded
-    fetchGithubStats();
     
-    // ========== CONTACT FORM HANDLING ==========
+    
+    
+  
+
+    // ========== PROTOCOLO DE UPLINK DIRETO (GMAIL) ==========
     const contactForm = document.getElementById('contactForm');
     const formStatus = document.getElementById('formStatus');
-    
+
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+            e.preventDefault(); // Bloqueia o redirecionamento e o erro 405
+
+            const scriptURL = "https://script.google.com/macros/s/AKfycbxBfIHw1MkC3r1PbZpXbdW4VC5L32NG4xVxfX-b3gDy0MCLnjKttgbgpwsxnWpB5JSUUw/exec";
             
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value
-            };
-            
-            // Simulate form submission
-            formStatus.className = 'form-status';
-            formStatus.textContent = '> Processing request...';
             formStatus.style.display = 'block';
-            
-            setTimeout(() => {
+            formStatus.className = 'form-status';
+            formStatus.innerHTML = `<span class="prompt">$</span> status: tunneling_to_gmail...`;
+
+            fetch(scriptURL, { 
+                method: 'POST', 
+                mode: 'no-cors', // Modo furtivo para evitar bloqueios do navegador
+                body: new FormData(contactForm)
+            })
+            .then(() => {
+                // SUCESSO
                 formStatus.className = 'form-status success';
                 formStatus.innerHTML = `
-                    <p><span style="color: var(--neon-green);">✓</span> Message transmitted successfully!</p>
-                    <p>Response expected within 24-48 hours.</p>
+                    <p><span style="color: var(--neon-green);">✓</span> CONNECTION_ESTABLISHED</p>
+                    <p>> Packet delivered to: luishenrique.lh2304@gmail.com</p>
                 `;
-                
-                // Reset form
                 contactForm.reset();
-                
-                // Hide success message after 5 seconds
-                setTimeout(() => {
-                    formStatus.style.display = 'none';
-                }, 5000);
-            }, 1500);
+            })
+            .catch(error => {
+                // FALHA
+                formStatus.className = 'form-status error';
+                formStatus.innerHTML = `<p>[ERROR] Neural link unstable. Transmission failed.</p>`;
+            })
+            .finally(() => {
+                setTimeout(() => { formStatus.style.display = 'none'; }, 8000);
+            });
         });
     }
     
