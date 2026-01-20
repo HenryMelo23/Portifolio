@@ -482,20 +482,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     
-    // ========== CUSTOM CURSOR EFFECT (Optional Enhancement) ==========
-    let cursorDot = document.createElement('div');
-    cursorDot.style.cssText = `
-        width: 8px;
-        height: 8px;
-        background: var(--electric-blue);
-        border-radius: 50%;
-        position: fixed;
-        pointer-events: none;
-        z-index: 9999;
-        transition: transform 0.2s ease;
-        display: none;
-    `;
-    document.body.appendChild(cursorDot);
+    
     
     let cursorRing = document.createElement('div');
     cursorRing.style.cssText = `
